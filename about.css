@@ -287,6 +287,10 @@ a{
   padding: 20px;
 }
 @media(max-width: 425px){
+  nav{
+    display: flex;
+    gap: 7px;
+  }
   .email{
     display: block;
     gap: 10px;

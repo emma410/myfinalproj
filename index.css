@@ -400,7 +400,8 @@ a {
   nav {
     justify-content: end;
     width: 100%;
-    gap: 15px;
+    gap: 7px;
+    margin-right: -100px;
   }
   .main-head {
     background-image: url(wildbd.PNG);
@@ -628,15 +629,15 @@ a {
   #desert-text {
     text-align: center;
   }
-  .last-main {
+  /* .last-main {
     font-size: 1em;
     padding: 20px;
-    width: 90%;
-    margin-left: 100px;
+    width: 100%;
+    margin-left: 0px;
     background-color: white;
     margin-top: 20px;
     border-radius: 10px;
-  }
+  } */
   .email {
     display: block;
     gap: 10px;
@@ -661,18 +662,17 @@ a {
     margin-left: 0px;
   }
   .follow {
-    margin-left: -150px;
+    margin-left: 10px;
   }
   #end {
     text-align: center;
   }
   footer {
-    display: block;
     color: white;
     background-color: black;
     margin-top: 20px;
     padding: 10px;
-    width: 100%;
+    width: 95%;
     margin-left: 10px;
     border-radius: 5px;
   }
@@ -682,6 +682,9 @@ a {
     border-radius: 10px;
     width: fit-content;
     color: white;
+  }
+  .last-know{
+    margin-left: 20px;
   }
   .contact-us {
     margin-left: 0px;
@@ -705,9 +708,6 @@ a {
     color: white;
     padding: 20px;
   }
-  main {
-    width: px;
-  }
 }
 @media (max-width: 768px) {
   .slide {
@@ -724,7 +724,7 @@ a {
     width: 100%;
   }
   .last-main {
-    margin-left: 20px;
+    margin-left: 10px;
     width: 96%;
   }
   .slideshow-image-two {

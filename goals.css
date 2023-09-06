@@ -275,7 +275,7 @@ a {
   nav{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 7px;
     padding: 25px;
     justify-content: end;
     color: white;
