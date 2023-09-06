@@ -11,7 +11,7 @@ nav{
     color: white;
 }
 .main-head{
-    background-image: url(../images/about.jpg);
+    background-image: url(about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;

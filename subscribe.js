@@ -33,5 +33,5 @@ function isValidEmail(email) {
 
 function displaySuccessMessage() {
   errorMessage.style.color = 'green';
-  errorMessage.textContent = 'Success! You have subscribed to our newsletter.';
+  errorMessage.textContent = 'You have successfully subscribed to our newsletter';
 }

@@ -17,7 +17,7 @@ nav {
   color: white;
 }
 .main-head {
-  background-image: url(../images/wildbd.PNG);
+  background-image: url(wildbd.PNG);
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
@@ -403,7 +403,7 @@ a {
     gap: 15px;
   }
   .main-head {
-    background-image: url(../images/wildbd.PNG);
+    background-image: url(wildbd.PNG);
     background-repeat: no-repeat;
     height: 450px;
     width: 100%;
