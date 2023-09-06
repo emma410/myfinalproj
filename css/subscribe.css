@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(209, 225, 240);
+}
+.forms{
+    margin-top: 100px;
+    /* background-color: rebeccapurple; */
+    background-color: white;
+    margin-left: 300px;
+    font-size: 1.5em;
+    padding: 30px;
+    width: 650px;
+    border-radius: 20px;
+}
+#newsletter-form {
+    display: block;
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+  
+  #newsletter-form label,
+  #newsletter-form input {
+    margin: 10px;
+  }
+  
+  #newsletter-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button{
+    margin-left: 300px;
+  }
+  #newsletter-form button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #error-message {
+    color: red;
+    font-weight: bold;
+  }
+  .big{
+    width: 200px;
+  }
+  #name{
+    width: 400px;
+    height: 25px;
+  }
+  #email{
+    width: 400px;
+    height: 25px;
+  }
+  #phone{
+    width: 400px;
+    height: 25px;
+  }
+  .one{
+    margin-left: 80px;
+  }
+@media(max-width: 425px){
+    body{
+        background-color: rgb(209, 225, 240);
+    }
+    .forms{
+        margin-top: 50px;
+        /* background-color: rebeccapurple; */
+        background-color: white;
+        margin-left: 0px;
+        font-size: 1em;
+        padding: 10px;
+        width: 370px;
+        border-radius: 20px;
+    }
+    #newsletter-form {
+        display: block;
+        /* flex-direction: column; */
+        /* align-items: center; */
+      }
+      
+      #newsletter-form label,
+      #newsletter-form input {
+        margin: 10px;
+      }
+      
+      #newsletter-form button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button{
+        margin-left: 100px;
+      }
+      #newsletter-form button:hover {
+        background-color: #3e8e41;
+      }
+      
+      #error-message {
+        color: red;
+        font-weight: bold;
+      }
+      .big{
+        width: 200px;
+      }
+      #subb{
+        font-size: 1em;
+      }
+      #name{
+        width: 200px;
+        height: 15px;
+      }
+      #email{
+        width: 200px;
+        height: 15px;
+      }
+      #phone{
+        width: 200px;
+        height: 15px;
+      }
+      .one{
+        margin-left: 55px;
+      }
+}
+@media(max-width: 768px){
+    .forms{
+        margin-left: 20px;
+    }
+}

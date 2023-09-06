@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscribe to our news letter</title>
+    <link rel="stylesheet" href="../css/subscribe.css">
+</head>
+<body>
+    <main>
+        <div class="forms">
+            <h1 id="subb">Subscribe To Our Newsletter</h1>
+            <form id="newsletter-form">
+                <div class="one">
+                    <label for="name">Name:</label>
+                    <input type="text" class="big" id="name" name="name" required><br><br>
+                </div>
+                <div class="two">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" class="big" name="email" required><br><br>
+                </div>
+                <div class="three">
+                    <label for="phone">Phone Number:</label>
+                    <input type="number" id="phone" class="big" name="phone" required><br><br>
+                </div>
+                    
+                <button type="submit" id="sub">Subscribe Now</button>
+                <p id="error-message"></p>
+              </form>
+        </div>
+    </main>
+    <script src="../javascript/subscribe.js"></script>
+  </body>
+</html>
