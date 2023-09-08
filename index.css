@@ -2,6 +2,32 @@ body {
   margin: 0px;
   background-color: aliceblue;
 }
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  order: 2; /* Move the hamburger icon to the right end */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
 .slide {
   margin-left: -200px;
   border-radius: 0px;
@@ -20,17 +46,19 @@ nav {
   background-image: url(wildbd.PNG);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
+  height: 400px;
 }
 .ecosystem {
   background-color: rgba(0, 0, 0, 0.541);
-  height: 700px;
+  height: 400px;
 }
 .homee {
   text-decoration: none;
   color: white;
 }
-
+#hhh{
+  text-align: center;
+}
 /* .home:hover{
     padding: 5px;
 }
@@ -43,7 +71,9 @@ nav {
 .goal:hover{
     padding: 5px;
 } */
-
+.footer-content{
+  display: flex;
+}
 .home {
   display: flex;
   gap: 10px;
@@ -79,7 +109,7 @@ nav {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 #subzero{
     width: 200px;
@@ -308,7 +338,7 @@ nav {
 }
 #know {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-align: center;
   color: white;
 }
@@ -708,6 +738,24 @@ a {
     color: white;
     padding: 20px;
   }
+  .menu-toggle {
+    display: flex;
+    order: 1; /* Move the hamburger icon to the left end for small screens */
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: flex;
+}
 }
 @media (max-width: 768px) {
   .slide {
@@ -719,7 +767,7 @@ a {
     display: block;
   }
   .footer-content {
-    display: flex;
+    display: block;
     gap: 30px;
     width: 100%;
   }

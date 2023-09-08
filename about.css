@@ -2,6 +2,46 @@ body{
     margin: 0px;
     background-color: aliceblue;
 }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  order: 2; /* Move the hamburger icon to the right end */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+ul{
+  list-style: none;
+}
+.fst{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.scnd{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
 nav{
     display: flex;
     list-style: none;
@@ -14,11 +54,15 @@ nav{
     background-image: url(about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 400px;
 }
 .ecosystem{
     background-color: rgba(0, 0, 0, 0.541);
-    height: 600px;
+    height: 400px;
+}
+.second-text{
+  display: flex;
+  justify-content: space-evenly;
 }
 .homee{
     text-decoration: none;
@@ -176,9 +220,13 @@ nav{
 }
 .second-text-text{
     font-size: 1.2em;
+    width: 30%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+}
+.second-text-text p{
+  margin-top: 50px;
 }
 #first-heading{
     text-align: center;
@@ -192,6 +240,7 @@ nav{
 }
 .forest-text{
   font-size: 1.2em;
+  text-align: center;
 }
 .forest-main{
   background-color: white;
@@ -247,7 +296,7 @@ nav{
 }
 #know{
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-align: center;
   color: white;
 }
@@ -291,6 +340,37 @@ a{
     display: flex;
     gap: 7px;
   }
+  .menu-toggle {
+    display: flex;
+    order: 1; /* Move the hamburger icon to the left end for small screens */
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: flex;
+}
+  #hh{
+    font-size: 2em;
+  }
+  .second-text{
+    display: block;
+    justify-content: space-evenly;
+  }
+  .second-text-text{
+    width: 100%;
+  }
+  #pp{
+    width: 100%;
+  }
   .email{
     display: block;
     gap: 10px;
@@ -314,7 +394,7 @@ footer{
 }
 #know{
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-align: center;
     color: white;
 }
@@ -353,19 +433,27 @@ footer{
     display: block;
 }
 .slide{
-  width: 90%;
+  width: 100%;
   height: 200px;
-  margin-left: 20px;
   border-radius: 5px;
 }
 }
 @media (max-width: 768px) {
   .slide{
     width: 100%;
-    margin-left: 0px;
+  }
+  .second-text{
+    display: block;
+  }
+  #pp{
+    width: 100%;
+  }
+  .second-text-text{
+    width: 100%;
+    margin-top: 10px;
   }
   .footer-content{
-    display: flex;
+    display: block;
     gap: 50px;
   }
 }

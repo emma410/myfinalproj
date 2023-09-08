@@ -11,7 +11,12 @@
     <main class="main">
         <div class="main-head">
             <div class="ecosystem">
-                <nav>
+                <div class="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <nav class="nav-links">
                     <a class="homee" href="index.html"><div class="home">
                         <img style="border-radius: 50%; margin-top: 6px;"
                         width="20px"
@@ -41,8 +46,9 @@
             </div>
         </div>
         <div class="second-main">
+            <h1  id="first-heading">All About The Ecosystem</h1>
             <div class="second-text">
-                <h1  id="first-heading">All About The Ecosystem</h1>
+                <img src="partner.jpg" id="pp" style="border-radius: 20px;" alt="" width="400px" height="500px">
                 <div class="second-text-text">
                     <p>We are passionate about the natural world and the diverse ecosystems that make up our 
                         planet. Our goal is to provide you with valuable insights and knowledge about these 
@@ -80,22 +86,22 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div> -->
                 <div class="forest-text">
-                    <p>Forests and grasslands are diverse and interconnected 
-                        habitats that regulate climate, support biodiversity, 
+                    <div class="fst">
+                        <p>Forests and grasslands are diverse and interconnected 
+                            habitats that regulate climate, support biodiversity, 
                         and provide essential ecosystem services like water 
                         filtration, soil conservation, and carbon storage.</p>
-                    <p>They are crucial for sustaining wildlife, carbon storage, 
-                        and providing resources such as timber, food, and medicine, 
-                        contributing to human well-being and the planet's health.</p>
-                    <h3 class="forest-importance">Importance Of The Forest And Grassland Ecosystem To Man</h3>
-                    <ul class="forest-list">
-                        <li>Food e.g fruits, nuts and grazing lands for livestocks</li>
-                        <li>Medicnal Plants</li>
-                        <li>Timber and wood products</li>
-                        <li>Climate Regulation by absorbing carbon dioxide and releasing oxygen</li>
-                        <li>Water resources:- they regulate water cycles and maintain water quality</li>
-                        <li>Tourism</li>
-                    </ul>
+                        <h3 class="forest-importance">Importance Of The Forest And Grassland Ecosystem To Man</h3>
+                        <ul class="forest-list">
+                            <li>Food e.g fruits, nuts and grazing lands for livestocks</li>
+                            <li>Medicnal Plants</li>
+                            <li>Timber and wood products</li>
+                            <li>Climate Regulation by absorbing carbon dioxide and releasing oxygen</li>
+                            <li>Water resources:- they regulate water cycles and maintain water quality</li>
+                            <li>Tourism</li>
+                        </ul>
+                    </div>
+                    <div class="scnd">
                     <h3 id="improve">How Can We Improve The Forest Ecosystem</h3>
                     <ul id="improvement">
                         <li>Reduce deforestation</li>
@@ -103,6 +109,7 @@
                         <li>Reduce pollution: Reducing pollution from sources such as industry, transportation, and agriculture can help protect ecosystem health.</li>
                         <li>Educate others: Educating others about the importance of forest and grassland ecosystems can help raise awareness and promote conservation efforts.</li>
                     </ul>
+                    </div>
                 </div>
             </div>
             <div class="ocean-main">
@@ -133,37 +140,33 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div> -->
                 <div class="forest-text">
-                    <p>Water and wetland ecosystems are closely interconnected 
-                        habitats that provide essential services to humans and 
-                        wildlife. Wetlands help regulate water quality and quantity, 
-                        provide habitat for many plant and animal species, and 
-                        support biodiversity. They are also important for carbon 
-                        storage and play a crucial role in mitigating the 
-                        impacts of climate change.</p>
-                    <p>Water ecosystems such as rivers, lakes, and oceans provide 
-                        essential services such as water supply, food resources, 
-                        and transportation. They also support biodiversity and provide 
-                        habitat for many aquatic species. However, human activities 
-                        such as pollution, overfishing, and climate change are threatening 
-                        the health of water ecosystems, highlighting the need for conservation 
-                        efforts and sustainable management practices.</p>
-                <h3>Importance Of The Ocean And Wetland Ecosystem</h3>
-                <ul>
-                    <li>Economic Value e.g tourism</li>
-                    <li>Climate Regulation</li>
-                    <li>Environmental Services such as clean air and water, soil fertility, and natural resource availability.</li>
-                    <li>Biodiversity the variety of plant and animal species that exist in an ecosystem</li>
-                </ul>
-                <h3>How Can We Improve The Ocean And Wetland Ecosystem</h3>
-                <ul>
-                    <li>Reduce pollution</li>
-                    <li>Promote sustainable management</li>
-                    <li>Control invasive species</li>
-                    <li>Raise awareness</li>
-                </ul>
+                    <div class="fst">
+                        <p>Water and wetland ecosystems are closely interconnected 
+                            habitats that provide essential services to humans and 
+                            wildlife. Wetlands help regulate water quality and quantity, 
+                            provide habitat for many plant and animal species, and 
+                            support biodiversity. They are also important for carbon 
+                            storage and play a crucial role in mitigating the 
+                            impacts of climate change.</p>
+                                <h3>Importance Of The Ocean And Wetland Ecosystem</h3>
+                                <ul>
+                                    <li>Economic Value e.g tourism</li>
+                                    <li>Climate Regulation</li>
+                                    <li>Biodiversity</li>
+                                </ul>
+                    </div>
+                    <div class="scnd">
+                        <h3>How Can We Improve The Ocean And Wetland Ecosystem</h3>
+                        <ul>
+                            <li>Reduce pollution</li>
+                            <li>Promote sustainable management</li>
+                            <li>Control invasive species</li>
+                            <li>Raise awareness</li>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
-            </div>
-            <div class="desert-main">
+                <div class="desert-main">
                 <h2 id="forest-text">The Desert Ecosystem</h2>
                 <div class="slideshow-container">
                     <div class="mySlideees fade">
@@ -191,23 +194,14 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div> -->
                 <div class="forest-text">
-                    <p>Desert ecosystems are characterized by low rainfall 
-                        and high temperatures, and are home to a variety 
-                        of plants and animals adapted to these harsh conditions. 
-                        Plants such as cacti and succulents have evolved to 
+                    <div class="fst">
+                        <p>Desert ecosystems are characterized by low rainfall 
+                            and high temperatures, and are home to a variety 
+                            of plants and animals adapted to these harsh conditions. 
+                            Plants such as cacti and succulents have evolved to 
                         store water in their tissues, while animals such as 
                         reptiles and rodents are able to conserve water and 
                         regulate their body temperature in extreme heat.</p>
-                    <p>Desert ecosystems provide important ecosystem services 
-                        such as soil stabilization, nutrient cycling, and 
-                        carbon storage. They are also home to many unique 
-                        species found nowhere else on Earth, making them 
-                        important for biodiversity conservation. However, 
-                        desert ecosystems are also vulnerable to human activities 
-                        such as overgrazing, mining, and urbanization, highlighting 
-                        the need for sustainable management practices and conservation 
-                        efforts.
-                        </p>
                     <h3>Importance Of The Desert Ecosystem</h3>
                     <ul>
                         <li>Home to unique plants and animals adapted to harsh conditions</li>
@@ -215,6 +209,8 @@
                         <li>Attract tourists interested in desert landscapes and wildlife</li>
                         <li>Important for soil stabilization, nutrient cycling, and carbon storage.</li>
                     </ul>
+                </div>
+                <div class="scnd">
                     <h3>How Can We Improve the Desert Ecosystem</h3>
                     <ul>
                         <li>Reduce human impact e.g mining</li>
@@ -222,6 +218,7 @@
                         <li>Manage water resources</li>
                         <li>Address climate change such as reducing the emission of greenhouse gas effect</li>
                     </ul>
+                </div>
                 </div>
             </div>
         </div>
@@ -247,8 +244,9 @@
                 <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
             </div>
             <div class="forest-text">
-                <h3>Factors That Damages The Ecosystem</h3>
-                <ul>
+                <div class="fst">
+                    <h3>Factors That Damages The Ecosystem</h3>
+                    <ul>
                     <li>Pollution</li>
                     <li>Overfishing</li>
                     <li>Urbanization</li>
@@ -257,27 +255,21 @@
                     <li>Agricultural Practices e.g excessive use of pesticide</li>
                     <li>Industrialization</li>
                 </ul>
+            </div>
+            <div class="scnd">
                 <h3>Adverse Effect Of Polluting The Ecosystem</h3>
                 <ul>
                     <li>Loss of biodiversity</li>
                     <li>Air pollution</li>
                     <li>Water pollution</li>Invasive Species
                     <li>Soil contamination</li>
-                    <li>Climate change:it is the long-term changes in global temperature, precipitation, 
-                        and other weather patterns that are primarily caused by human activities, such 
-                        as burning fossil fuels and deforestation. </li>
-                    <li>Acid rain:- is a form of precipitation, such as rain, snow, or fog, 
-                        that contains high levels of acidic compounds, such as sulfuric 
-                        acid and nitric acid. These acidic compounds are formed when 
-                        pollutants, such as sulfur dioxide and nitrogen oxides, are 
-                        released into the atmosphere by human activities, such as burning 
-                        fossil fuels and industrial processes.</li>
                     <li>Ozone depletion</li>
                     <li>Habitat destruction</li>
                     <li>Human health impacts</li>
                     <li>Economic impacts such as loss in crop yield</li>
-                </ul>
-            </div>
+                </div>
+            </ul>
+        </div>
         </div>
         <footer>
             <div class="footer-content">
@@ -297,6 +289,7 @@
                         <p id="no">+2348145108641</p>
                     </div>
                 </div>
+                </div>
                 <div class="follow">
                     <h2>Follow Us</h2>
                     <div class="follow-images">
@@ -310,7 +303,6 @@
                 <div class="last-know">
                     <h2><a id="know" href="https://ecosystemhandbook.com/ecosystem-builders/what-a-feeling/" target="_blank">Know More About The <br>Ecosystem <br>Across The Web</a></h2>
                 </div>
-            </div>
             </div>
         </div>
         <p id="end">&copy; 2023 Preserving the Ecosystem || All rights reserved</p>

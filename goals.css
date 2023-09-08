@@ -2,6 +2,31 @@ body {
   margin: 0px;
   background-color: aliceblue;
 }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  order: 2; /* Move the hamburger icon to the right end */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
 nav{
   display: flex;
   list-style: none;
@@ -22,11 +47,11 @@ nav{
   background-image: url(wild61.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 400px;
 }
 .ecosystem {
   background-color: rgba(0, 0, 0, 0.541);
-  height: 600px;
+  height: 400px;
 }
 .homee {
   text-decoration: none;
@@ -71,6 +96,11 @@ nav{
 }
 .forest-text {
   font-size: 1.2em;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
 .slide {
   margin-left: -180px;
@@ -203,7 +233,7 @@ nav{
 }
 #know {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 0.8em;
   text-align: center;
   color: white;
 }
@@ -245,6 +275,7 @@ a {
 .build {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-bottom: 0px;
   /* animation: anime 10s infinite ease-in-out; */
 }
 /* @keyframes anime {
@@ -271,6 +302,27 @@ a {
     display: block;
     gap: 10px;
     font-size: 1em;
+  }
+  .menu-toggle {
+    display: flex;
+    order: 1; /* Move the hamburger icon to the left end for small screens */
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: flex;
+}
+  #hh{
+    font-size: 2em;
   }
   nav{
     display: flex;
