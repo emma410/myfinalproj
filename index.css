@@ -60,7 +60,7 @@ nav {
 /* .home:hover{
     padding: 5px;
 }
-.contact:hover{   
+.contact:hover{
     padding: 5px;
 }
 .about:hover{
@@ -386,7 +386,7 @@ a {
 @media (max-width: 425px) {
   /* .second-main{
         border: solid red 2px;
-        
+
     }
     .main-head{
         border: solid red 2px;
@@ -736,10 +736,14 @@ a {
     color: white;
     padding: 20px;
   }
+}
+@media (max-width: 768px) {
   .menu-toggle {
     display: flex;
-    order: 1; /* Move the hamburger icon to the left end for small screens */
-}
+    order: 1;
+    /* margin-left: 450px; */
+  }
+
 
 .nav-links {
     display: none;
@@ -754,8 +758,6 @@ a {
 .nav-links.active {
     display: flex;
 }
-}
-@media (max-width: 768px) {
   .slide {
     width: 100%;
     margin-left: 0px;
@@ -793,12 +795,22 @@ a {
     height: 35px;
     padding: 10px;
     border-radius: 5px;
-    margin-left: 100px;
+    margin-left: 130px;
     background-color: white;
     border: transparent;
 }
 #subzero:hover{
     background-color: black;
     color: yellow;
+}
+.main-head {
+  background-image: url(wildbd.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.ecosystem {
+  background-color: rgba(0, 0, 0, 0.541);
+  height: 500px;
 }
 }

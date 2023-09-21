@@ -303,24 +303,6 @@ a {
     gap: 10px;
     font-size: 1em;
   }
-  .menu-toggle {
-    display: flex;
-    order: 1; /* Move the hamburger icon to the left end for small screens */
-}
-
-.nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background-color: #333;
-    width: 100%;
-}
-
-.nav-links.active {
-    display: flex;
-}
   #hh{
     font-size: 2em;
   }
@@ -390,4 +372,27 @@ a {
   .footer-content {
     display: block;
   }
+}
+@media(max-width: 768px){
+  .menu-toggle {
+    display: flex;
+    order: 1; /* Move the hamburger icon to the left end for small screens */
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+}
+
+.nav-links.active {
+    display: flex;
+}
+.footer-content{
+  display: block;
+}
 }
